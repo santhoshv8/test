@@ -1,0 +1,43 @@
+
+2. public class TimmySara{
+
+     int n = 10 ;
+	 int m = 3 ;
+	 
+	 if(n % 2 == 0 && n % 2 == 0){
+	     System.out.println("Timmy and sarah they are in love");
+	  }else{
+	       System.out.println("Timmy and sarah they are not in love")
+	  }
+}
+
+3. Ganeralized classes means sub classes and 
+   speclialized means super classes.
+
+4. a) You should declared your class as final. 
+      A class declared as final can't be extended by any other class.
+
+   b)java.lang.String , object .
+   
+   c)Alternatives of Inheritance 
+      interface
+	 consider using an object as an alternative to inheritance.
+
+5. comparator , comparable , collection.sort.
+
+6. *linkedlist are node based where as Arraylist are index based.
+   *linkedlist are store node order where as Arraylist are stored in sequential order. 
+   *LinkedList is faster in manipulation of data where as ArrayList is slower in manipulation of data.
+   
+7. *listiterator traverse onlt lists where as iterator traverse list , set and map .
+   *In listiterator can add an element by using add() where as in iterator can not add an element.
+   *In listiterator traverse element  both forword and backword direction where as in iterator traverse an element in forword direction.
+
+10. static polymorphism
+     The methods declare more then once with same name but different in the parameter list is known as static polymorphism.
+	 
+	dynamic polymorphism
+	If a subclass provides the specific implementation of the method that has been declared by one of its parent class, 
+	it is known as dynamic polymorphism.
+	 
+11. declare the class as private.
