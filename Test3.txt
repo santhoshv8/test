@@ -1,0 +1,109 @@
+1. The Collection Types in Java consists of multiple interface where each interface is used to store a specific data type 
+   Iterable Interface.
+
+   * Iterable
+   * Collection
+   * List -- Array List , Linked List
+   * Set  -- Hashset , Linked Hashset
+   * Sorted Set -- Treeset
+   * Queue  -- Linked List
+   
+  The main interfaces are 
+  *List
+  *Set
+  *Sorted Set
+  *Queue
+  
+2. 
+    Map Hierachy :
+                    
+	  		Map         Sorted Map 
+        
+           Hash Map 	 Treemap
+  
+         Linkedhashmap 
+    
+	Map : * The map interface is present in java.util package represents a mapping between a key and a value.
+	      * A map contains unique keys.
+		  * Maps are perfect to use for key-value association mapping
+          * A Map cannot contain duplicate keys and each key can map to at most one value.
+		  * There are two interfaces for implementing Map in java. They are Map and SortedMap, 
+		  * There are three implements HashMap, TreeMap, and LinkedHashMap.
+     
+3. 
+      Hash Set
+
+    * HashSet is a generic class of the Java collection framework.
+    * It extends AbstractSet and implements the Set interface. 
+    
+	 Hash Table
+	
+	* It creates a collection that uses a hash table for storage.
+	* The hash table stores the information.
+	
+	
+4.
+
+     * It provides the basic implementation of the Map interface of Java. 
+	 * It stores the data in (Key, Value) pairs. 
+	 * We can access them by an index of another type. 
+  
+
+11. Using annotation @Autowired and @Qualifier we can inject beans in spring.
+
+
+12. We can have more then one spring configuration , 
+    * Using @Configuration annotation spring will get to know that it is configuration
+    * Using @component annotation spring will get to know that it is component.
+    * Using @Bean annotation spring will get to know that it is bean.
+
+
+13. 
+    StringBuffer   
+  
+     * StringBuffer is synchronized i.e. thread safe.
+	 * StringBuffer is less efficient than StringBuilder.
+	 
+    StringBuilder
+
+     * StringBuilder is non-synchronized i.e. not thread safe.
+     * StringBuilder is more efficient than StringBuffer.	 
+   
+
+15. 
+    
+	@Component : @Component is an annotation that allows Spring to automatically detect our custom beans.
+	 
+	@ComponentScan : @ComponentScan tells Spring in which packages you have annotated classes which should be managed by Spring.
+
+    @Bean : Spring Bean annotation is usually declared in Configuration classes methods.
+  
+16.
+
+package com.xworkz.mapapp;
+
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class CountryWithCountryCode {
+
+	public static void main(String[] args) {
+		
+		Map<String, Integer> map = new TreeMap<String, Integer>();
+		map.put("India", 584520);
+		map.put("Indonesia", 584210);
+		map.put("Italy", 594010);
+		map.put("Australia", 568420);
+		map.put("Bangladesh", 587620);
+		
+		System.out.println("size = "+map.size());
+
+		Set<Entry<String,String>> entries = map.entrySet();
+		for (Entry<String, String> entry : entries) {
+			System.out.println(entry.getKey()+"="+entry.getValue());
+		} 
+	}
+}
+
